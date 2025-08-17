@@ -12,7 +12,7 @@ app.get('/status', async (req, res) => {
     });
 
     const [ results, fields ] = await connection.query(`
-        SELECT * from Status LIMIT 1
+        SELECT * FROM Status LIMIT 1
     `)
 
     res.send({
